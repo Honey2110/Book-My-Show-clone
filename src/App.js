@@ -7,15 +7,15 @@ import "slick-carousel/slick/slick-theme.css";
 import Homepage from './pages/Home-page';
 import Moviespage from './pages/Movie-page';
 import Playspage from './pages/Plays-page';
+
+
 function App() {
   return (
-    <>
-      <Routes>
-        <Route path = "/" element = {<Homepage />}></Route>
-        <Route path = "/movies/:id" element = {<Moviespage/>}></Route>
-        <Route path = "/plays" element = {<Playspage />}></Route>
-     </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="/movie/:id" element={<Moviespage />} />
+      <Route path="/plays" element={<Playspage />} />
+    </Routes>
   );
 }
 
